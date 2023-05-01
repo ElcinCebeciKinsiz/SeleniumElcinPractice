@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 import java.util.List;
 
-public class C02_ByClassName {
+public class C02_ByClassName_NutellaEnYuksekFiyat_ArrayList {
     public static void main(String[] args) throws InterruptedException {
 
         //Soru-Amazona gidip, nutellayo aratip, en yuksek fiyati yazdiralim//
@@ -24,10 +24,11 @@ public class C02_ByClassName {
         // Ve bunu aramaKutusu adini vererek webElement olarak atayalim
         aramaKutusu.sendKeys("Nutella" + Keys.ENTER);   //Arama cubuguna Nutella yaz ve Enter'a bas
 
-        List<WebElement> fiyatListesi = driver.findElements(By.className("a-price-whole"));//className "a-price-whole" olarak tanimlanmis tum elementleri bul
-        //ve adi fiyatListesi olan WebElement data turunde olan Listeye ata
+        List<WebElement> fiyatListesi = driver.findElements(By.className("a-price-whole"));//herhangi bir nutellanin fitanina inspect yapinca ortak olan fiat class name'ine ulastikclassName "a-price-whole"
         //System.out.println(fiyatListesi);    //WebElement List direkt olarak yazdirilamaz. WeElementler String old icin once integer'a cevirmek lazim fiyat karsilastirmasi ypabilmek icin
         //Bu yuzden for each loop kullarak webElementleri tek tek elden gecirecegiz, ve get ile her bir elementin uzerindeki yaziyi al ve yazdir diyecegiz
+
+
         for (WebElement each : fiyatListesi
         ) {
             System.out.print(each.getText() + " "); //Her bir elementin uzerindeki yaziyi yazdir
