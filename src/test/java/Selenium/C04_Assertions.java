@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C04_Assertations {
+public class C04_Assertions {
     static WebDriver driver;
 
     @BeforeClass
