@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
-public class C05_HandleDropDownMenu {
+public class C05_DropDownMenu {
 
    static WebDriver driver;
 
@@ -53,20 +53,32 @@ public class C05_HandleDropDownMenu {
         // select an option from the dropdown by its value
         //Bunu 3 sekilde yapabiliriz select.selectByValue() or Select.selectByIndex() or select.selectByVisibleText() ile yapabiliriz
         select.selectByValue("search-alias=stripbooks-intl-ship");
+/*
+       select.selectByValue("search-alias=stripbooks-intl-ship");
 
-        // select.selectByIndex(5); //inspect yaptiginda en ustteki option'un oldugu text 0.index, sonraki 1. index oluyor ve boyle devam ediyor
-        //Book ise 5.indeksdeymis
+        select.selectByIndex(5); //inspect yaptiginda en ustteki option'un oldugu text 0.index, sonraki 1. index oluyor ve boyle devam ediyor
+        ook ise 5.indeksdeymis
 
-        // select.selectByVisibleText("Books");
-
+        select.selectByVisibleText("Books");
+*/
         //-c.Enter "Java" onthe searh box
         WebElement searchBox=driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
         searchBox.sendKeys("Java"+ Keys.ENTER);
 
-        //  -d.Test if title contains book and Java
+        //  -d.Test if title contains Java
         String expectedWord="Java";
         String actualTitle=driver.getTitle();
         Assert.assertTrue(actualTitle.contains(expectedWord));
+
+        //from the dropdow menu test if "Books" option was selected
+
+        dropDownBox= driver.findElement(By.xpath("//select[@id='searchDropdownBox']"));
+        select = new Select(dropDownBox);
+        select.selectByIndex(5);
+
+        String actualSelectedOption=select.getFirstSelectedOption().getText();  //bu bize ilk secileni text olarak getirir yani "Books"
+        String expectedSelectedOption="Books";
+        Assert.assertEquals(expectedSelectedOption,actualSelectedOption);
 
 
         Thread.sleep(2000);
