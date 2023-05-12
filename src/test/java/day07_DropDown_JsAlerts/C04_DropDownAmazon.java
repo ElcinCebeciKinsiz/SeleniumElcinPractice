@@ -1,4 +1,4 @@
-package Selenium;
+package day07_DropDown_JsAlerts;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.AfterClass;
@@ -41,7 +41,7 @@ public class C07_DropDownAmazon {
     //Q1-a.Go to amazon webpage
     //  -b.From the dropdown menu next to searc box select "book"
     //  -c.Enter "Java" onthe searh box
-    //  -d.Test if title contains book and Java
+    //  -d.Test if title contains Java
 
         // navigate to the Amazon homepage
         driver.get("https://www.amazon.com/");
