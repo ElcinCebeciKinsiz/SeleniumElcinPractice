@@ -1,6 +1,5 @@
 package day000_GROUP_PRACTICE;
 
-import Utilities.ReusableMethods;
 import Utilities.TestBase;
 import com.github.javafaker.Faker;
 import org.junit.Test;
@@ -10,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-public class Q1_080523_FakerIleCozum extends TestBase {
+public class Question_080523_FakerIleCozum extends TestBase {
     @Test
     public void Test01() throws InterruptedException {
 
