@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C04_Assertion_Before_After_Class {
+public class C01_Assertion_Before_After_Class {
 
     // create 3 different test methods
     // for each method create a driver
@@ -48,5 +48,3 @@ public class C04_Assertion_Before_After_Class {
         System.out.println(driver.getTitle());
     }
 }
-
-

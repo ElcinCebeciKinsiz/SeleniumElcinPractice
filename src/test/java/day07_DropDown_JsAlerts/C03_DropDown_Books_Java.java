@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.time.Duration;
 import java.util.List;
 
-public class C07_DropDown_Books_Java {
+public class C03_DropDown_Books_Java {
 
     // 1) locate the webElement
     WebDriver driver;

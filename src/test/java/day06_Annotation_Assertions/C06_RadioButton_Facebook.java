@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C04_RadioButton_Facebook {
+public class C06_RadioButton_Facebook {
 // Radio buttons are the when you select one option the other option will be unselected
 //When you tick box for Female, male box will be unselected
 /*
@@ -55,8 +55,8 @@ public class C04_RadioButton_Facebook {
 
  //D. Locate the radio button elements and choose the one that suits you
 
-WebElement femaleButton= driver.findElement(By.xpath("(//input[@class='_8esa'])[1]"));
-femaleButton.click();
+   WebElement femaleButton= driver.findElement(By.xpath("(//input[@class='_8esa'])[1]"));
+   femaleButton.click();
  }
 
 

@@ -1,4 +1,4 @@
-package day000_GROUP_PRACTICE;
+package day000_GROUP_PRACTICE.GP_080523;
 
 import Utilities.TestBase;
 import com.github.javafaker.Faker;

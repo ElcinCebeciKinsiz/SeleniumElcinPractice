@@ -1,4 +1,4 @@
-package day07_DropDown_JsAlerts;
+package day08_Authentication_WindowHandle_IFrame;
 
 import Utilities.ReusableMethods;
 import Utilities.TestBase;
@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C10_IFramePractice extends TestBase {
+public class C02_IFramePractice extends TestBase {
     // İframe: Eğer locate ettiğiniz WebElement'in kodun eminsiniz ama no such element exception'ı verdiğinde
     //   acaba bu element iframe içinde mi diye konttrol etmeliyiz.Bu durumda ilk olarak iframe elementini locate edilir.
     //  ve frame'e aşağıdaki yapı ile geçiş yaparım
@@ -53,7 +53,7 @@ public class C10_IFramePractice extends TestBase {
         WebElement youtubeFrame = driver.findElement(By.xpath("//iframe[@wmode='transparent']"));
         driver.switchTo().frame(youtubeFrame);
         driver.findElement(By.xpath("//button[@aria-label='Play']")).click();
-        ReusableMethods.waitFor(3);
+        ReusableMethods.wait(3);
 
         //4) ilk iframe'den çıkıp ana sayfaya dönünüz
         driver.switchTo().defaultContent();
@@ -62,7 +62,7 @@ public class C10_IFramePractice extends TestBase {
         WebElement jMeterMadeEasyFrame = driver.findElement(By.id("a077aa5e"));
         driver.switchTo().frame(jMeterMadeEasyFrame);
         driver.findElement(By.tagName("a")).click();
-        ReusableMethods.waitFor(3);
+        ReusableMethods.wait(3);
 
 
 

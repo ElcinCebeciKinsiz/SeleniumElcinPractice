@@ -2,7 +2,6 @@ package day08_Authentication_WindowHandle_IFrame;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.bouncycastle.math.ec.custom.sec.SecT113Field;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -14,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 import java.util.Set;
 
-    public class C05_WindowsHandle {
+    public class C05_WindowsHandle2 {
 
 
         WebDriver driver;

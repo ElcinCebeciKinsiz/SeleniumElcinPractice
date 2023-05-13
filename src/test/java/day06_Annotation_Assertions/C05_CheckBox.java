@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C04_CheckBox {
+public class C05_CheckBox {
     /*
 
     a. Go to the given web page.

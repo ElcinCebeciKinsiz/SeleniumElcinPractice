@@ -1,4 +1,4 @@
-package day07_DropDown_JsAlerts;
+package day08_Authentication_WindowHandle_IFrame;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C09_IFrame {
+public class C02_IFramePractice2 {
 
     WebDriver driver;
     @Before
@@ -31,6 +31,7 @@ public class C09_IFrame {
 
     @Test
     public void test01() throws InterruptedException {
+
         //  1 ) https://the-internet.herokuapp.com/iframe adresine gidin.
         driver.get("https://the-internet.herokuapp.com/iframe");
 

@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 import java.util.Set;
-    public class C05_WindowsHandle2 {
+    public class C05_WindowsHandle3 {
         WebDriver driver;
         @Before
         public void setUp() {

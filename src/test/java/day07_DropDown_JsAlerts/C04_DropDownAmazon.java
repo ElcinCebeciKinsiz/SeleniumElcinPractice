@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
-public class C07_DropDownAmazon {
+public class C04_DropDownAmazon {
 
    static WebDriver driver;
 

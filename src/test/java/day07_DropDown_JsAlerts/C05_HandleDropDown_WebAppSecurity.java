@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C08_HandleDropDown_WebAppSecurity {
+public class C05_HandleDropDown_WebAppSecurity {
   /*
   1. http://zero.webappsecurity.com/ Adresine gidin
   2. Sign in butonuna basin

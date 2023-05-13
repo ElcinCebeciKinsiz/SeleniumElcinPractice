@@ -1,7 +1,7 @@
-package day07_DropDown_JsAlerts;
+      package day07_DropDown_JsAlerts;
 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+      import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
-public class C02_JsAlerts {
+      public class C02_JsAlerts {
         // set required options
         // go to the https://the-internet.herokuapp.com/javascript_alerts
         // create 3 different methods to click jsAlerts
@@ -35,6 +35,7 @@ public class C02_JsAlerts {
             WebElement jsFirstButton = driver.findElement(By.xpath("//button[text()='Click for JS Alert']"));
             jsFirstButton.click();
             Thread.sleep(2000);
+
             // when we see an js allert we need to swicth our driver to that alert
             // to accept the jsAlert
             //driver.switchTo().alert().accept();
@@ -49,7 +50,7 @@ public class C02_JsAlerts {
             // test that after clicking jsConfirmButton and accepting it
             // result text will be "You clicked: Ok
             // test that after clicking jsConfirmButton and canceling it
-            // result text will be "You clicked: Calcel
+            // result text will be "You clicked: Cancel
             driver.get("https://the-internet.herokuapp.com/javascript_alerts");
             WebElement jsConfirmButton = driver.findElement(By.xpath("//button[text()='Click for JS Confirm']"));
             jsConfirmButton.click();

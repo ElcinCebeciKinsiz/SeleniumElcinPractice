@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class C02_MouseAction_DragAndDrop extends TestBase {
+public class C02_DragAndDropAction extends TestBase {
 
     /*
     Let's create a new class: MouseActions2
@@ -21,18 +21,20 @@ public class C02_MouseAction_DragAndDrop extends TestBase {
         //
         //1- Let's go to https://demoqa.com/droppable
         driver.get("https://demoqa.com/droppable");
+
         //2- Let's hold the "Drag me" button and drop it above the "Drop here" box
         Actions actions = new Actions(driver);
         WebElement dragMeWebElement = driver.findElement(By.xpath("//div[text()='Drag me']"));
         WebElement dropPlace = driver.findElement(By.xpath("(//div[@class='drop-box ui-droppable'])[1]"));
         actions.dragAndDrop(dragMeWebElement,dropPlace).perform();
-        ReusableMethods.waitFor(5);
+        ReusableMethods.wait(5);
+
         //3-  Test that,Instead of “Drop here” text “Dropped!” text is there
         WebElement droppedWebElement =driver.findElement(By.xpath("//p[text()='Dropped!']"));
         String actualText = droppedWebElement.getText();
         String expectedText = "Dropped!";
         Assert.assertEquals(expectedText,actualText);
-        ReusableMethods.waitFor(3);
+        ReusableMethods.wait(1);
     }
 }
 

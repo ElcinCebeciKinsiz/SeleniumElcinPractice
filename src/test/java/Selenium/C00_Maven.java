@@ -1,16 +1,4 @@
-package day05_Maven;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import javax.lang.model.element.Element;
-import javax.management.InvalidAttributeValueException;
-import java.time.Duration;
-import java.util.List;
+package Selenium;
 
 public class C00_Maven {
     public static void main(String[] args) throws InterruptedException {

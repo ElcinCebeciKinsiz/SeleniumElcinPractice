@@ -8,8 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
-
     public class C05_KeyBoardActions extends TestBase {
 
         //1 - Let's create a Class KeyboardActions1
@@ -41,7 +39,7 @@ import org.openqa.selenium.interactions.Actions;
                     .sendKeys("71"+Keys.ENTER)
                     .perform();
 
-            ReusableMethods.waitFor(3);
+            ReusableMethods.wait(3);
 
             //4 - test that the search is completed in amazon website
 

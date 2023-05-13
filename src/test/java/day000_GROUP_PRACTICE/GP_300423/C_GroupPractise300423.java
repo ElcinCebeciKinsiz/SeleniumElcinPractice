@@ -1,4 +1,4 @@
-package day000_GROUP_PRACTICE;
+package day000_GROUP_PRACTICE.GP_300423;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class W2_Qestion2 extends TestBase {
+public class W2_LogInWithWrongEmailAndPassword extends TestBase {
 /*
    Test Case 2: Login User with incorrect email and password
     1- Launch the website https://automationexercise.com/
@@ -18,13 +18,13 @@ public class W2_Qestion2 extends TestBase {
     7. Verify error 'Your email or password is incorrect!' is visible
      */
 @Test
-public void loginWithIncorrectEmailAndPassword(){
+public void loginWithIncorrectEmailAndPassword() {
  // 1- Launch the website https://automationexercise.com/
  driver.get("https://automationexercise.com/");
 
  // 2. Verify that home page is visible successfully
- String titleoFWebsite = driver.getTitle() ;
- Assert.assertEquals("Automation Exercise",titleoFWebsite);
+ String titleoFWebsite = driver.getTitle();
+ Assert.assertEquals("Automation Exercise", titleoFWebsite);
 
  // 3. Click on 'Signup / Login' button
  WebElement logInButtonMainPage = driver.findElement(By.xpath("//a[normalize-space()='Signup / Login']"));
@@ -32,7 +32,7 @@ public void loginWithIncorrectEmailAndPassword(){
 
  // 4. Verify 'Login to your account' is visible
  WebElement loginToYourAccountText = driver.findElement(By.xpath("//h2[normalize-space()='Login to your account']"));
- Assert.assertTrue("Login To Your Account Header Text Is not Displayed",loginToYourAccountText.isDisplayed());
+ Assert.assertTrue("Login To Your Account Header Text Is not Displayed", loginToYourAccountText.isDisplayed());
 
  // 5. Enter incorrect email address and password
  WebElement usernameTextBox = driver.findElement(By.xpath("//input[@data-qa='login-email']"));
@@ -48,7 +48,7 @@ public void loginWithIncorrectEmailAndPassword(){
  WebElement emailAndPasswordWarningMessage =
          driver.findElement(By.xpath("//p[normalize-space()='Your email or password is incorrect!']"));
 
- Assert.assertTrue("The Warning Message is not Visible",emailAndPasswordWarningMessage.isDisplayed());
+ Assert.assertTrue("The Warning Message is not Visible", emailAndPasswordWarningMessage.isDisplayed());
 
 }
 }

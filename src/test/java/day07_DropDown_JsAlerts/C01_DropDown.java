@@ -1,4 +1,4 @@
-package day07_DropDown_isAlerts;
+package day07_DropDown_JsAlerts;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;

@@ -24,6 +24,3 @@ import org.junit.Test;
         }
 
     }
-    Footer
-© 2023 GitHub, Inc.
-}
